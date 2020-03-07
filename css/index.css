@@ -13,6 +13,48 @@ article {
     background-color: #444;
     margin-bottom: 40px;;
 }
+
+article menu {
+    height:50px;
+    width:50px;
+    position: absolute;
+    left:5px;
+    top:5px;
+}
+article menu:hover {
+    background-color: #666;
+    cursor: pointer;
+}
+
+article menu div { /* 40x40*/
+    height: 8px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    left: 5px;
+    top: 21px;
+}
+article menu div::after { /* 40x40*/
+    content: "";
+    height: 8px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: -16px;
+}
+article menu div::before { /* 40x40*/
+    content: "";
+    height: 8px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 16px;
+}
+
+
+
 article button {
     color:white;
     border: 2px solid white;
@@ -38,7 +80,7 @@ p {
     position: absolute;
     top: 50vh;
     margin-top: -30px;
-    left: -50vw;
+    left: -200vw;
 }
 
 p:nth-child(1) {
