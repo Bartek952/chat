@@ -31,7 +31,7 @@
             </nav>
         </menu>
 
-        <button>
+        <button id="signin-button">
             Sign in
         </button>
 
@@ -39,6 +39,17 @@
             Create an account
         </button>
     </article>
+    <form id="signin-form" method="post">
+        <span>
+            <h2>Username:</h2>
+            <input type="text" name="username">
+
+            <h2>Password</h2>
+            <input type="password" name="password">
+
+            <input type="submit" value="Log in">
+        </span>
+    </form>
     <h1>
         <p>Welcome</p>
         <p>to</p>

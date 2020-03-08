@@ -32,3 +32,25 @@ menu_button.addEventListener('click', (event) => {
         }, 100);
     })
 });
+
+
+
+
+const signin_button = document.querySelector('#signin-button');
+const signin_form = document.querySelector('#signin-form');
+const article = document.querySelector('article');
+
+signin_button.addEventListener('click', (event) => {
+    signin_form.classList.remove('passive-form');
+    signin_form.classList.add('active-form');
+
+    setTimeout(() => {
+        article.addEventListener('click', (event) => {
+            signin_form.classList.remove('active-form');
+            signin_form.classList.add('passive-form');
+        }, 100);
+    })
+});
+
+
+
