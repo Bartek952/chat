@@ -47,7 +47,7 @@
             <h2>Password</h2>
             <input type="password" name="password">
 
-            <input type="submit" value="Log in">
+            <input type="submit" value="Log in" id="submit">
         </span>
     </form>
     <h1>

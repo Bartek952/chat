@@ -153,16 +153,30 @@ h2 {
 input {
     display: flex;
 }
+#submit {
+    background: none;
+    border: 2px solid white;
+    padding: 8px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+#submit:hover {
+    background-color: #777;
+    cursor: pointer;
+}
 
 h1 {
     color: aqua;
-    font-size:60px;
+    font-size:80px;
 }
 p {
     position: absolute;
     top: 50vh;
-    margin-top: -30px;
+    margin-top: -40px;
     left: -200vw;
+    text-shadow: 0 0 20px aqua, 0 0 40px white;
 }
 
 p:nth-child(1) {
@@ -179,16 +193,18 @@ p:nth-child(3) {
 
 p:nth-child(4) {
     color: greenyellow;
-    font-size:240px;
-    margin-top: -200px;
+    font-size:360px;
+    margin-top: -300px;
     transition: all 1500ms ease;
+    text-shadow: none;
+    text-shadow: 0 0 20px greenyellow, 0 0 40px white;
 }
 
 
 
 
 .p1 {
-    left: 20%;
+    left: 16%;
 }
 .p2 {
     left: 35%
