@@ -26,7 +26,7 @@ menu_button.addEventListener('click', (event) => {
     menu_list.classList.add('active-menu');
 
     setTimeout(()=>{
-        menu_button.addEventListener('click', (event) => {
+        document.addEventListener('click', (event) => {
             menu_list.classList.remove('active-menu');
             menu_list.classList.add('passive-menu');
         }, 100);
