@@ -168,7 +168,7 @@ input {
 }
 
 h1 {
-    color: aqua;
+    color: rgb(255, 145, 0);
     font-size:80px;
 }
 p {
@@ -176,7 +176,6 @@ p {
     top: 50vh;
     margin-top: -40px;
     left: -200vw;
-    text-shadow: 0 0 20px aqua, 0 0 40px white;
 }
 
 p:nth-child(1) {
@@ -192,12 +191,10 @@ p:nth-child(3) {
 }
 
 p:nth-child(4) {
-    color: greenyellow;
+    color: rgb(217, 255, 0);
     font-size:360px;
     margin-top: -300px;
     transition: all 1500ms ease;
-    text-shadow: none;
-    text-shadow: 0 0 20px greenyellow, 0 0 40px white;
 }
 
 
