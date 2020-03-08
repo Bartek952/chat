@@ -11,8 +11,24 @@
 <body>
     <article>
         <menu>
-            <div>
+            <div class="menu-button">
             </div>
+
+            <nav class="menu-list">
+                <ul>
+                    <li>
+                        <a href="#">About project</a>
+                    </li>
+
+                    <li>
+                    <a href="#">About us</a>
+                    </li>
+
+                    <li>
+                    <a href="#">Help</a>
+                    </li>
+                </ul>
+            </nav>
         </menu>
 
         <button>

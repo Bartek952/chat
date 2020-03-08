@@ -6,6 +6,7 @@
 
 body {
     background-color: #222;
+    overflow: hidden;
 }
 
 article {
@@ -51,6 +52,52 @@ article menu div::before { /* 40x40*/
     position: absolute;
     left: 0;
     top: 16px;
+}
+
+nav {
+    width: 350px;
+    height: calc(100vh - 70px);
+    background-color: #555;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top:60px;
+    left:0;
+    transform: translateX(-100%);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    display: block;
+    width: 250px;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    margin: 30px auto;
+    height: 60px;
+    text-align: center;
+    font-size: 35px;
+    padding: 7px 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li:hover {
+    cursor:pointer;
+    background-color: #777;
+}
+.active-menu {
+    transform: translateX(0);
+}
+.passive-menu {
+    transform: translateX(-100%);
 }
 
 

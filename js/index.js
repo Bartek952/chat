@@ -17,3 +17,18 @@ window.onload = (event) => {
             }, 400);
     }, 400);
 };
+
+const menu_button = document.querySelector('menu');
+const menu_list = document.querySelector('.menu-list');
+
+menu_button.addEventListener('click', (event) => {
+    menu_list.classList.remove('passive-menu');
+    menu_list.classList.add('active-menu');
+
+    setTimeout(()=>{
+        menu_button.addEventListener('click', (event) => {
+            menu_list.classList.remove('active-menu');
+            menu_list.classList.add('passive-menu');
+        }, 100);
+    })
+});
